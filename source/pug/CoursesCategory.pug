@@ -6,9 +6,9 @@ include helpers/mixins
 doctype html
 html
 	head
-		title job
+		title CoursesCategory
 		include inc/head
-	body(class="p-job")
+	body(class="p-CoursesCategory")
 		include partials/header
 		+b('')(style='background-image: url(../img/pic-coursesCategory.jpg)').top-page._blackout
 			.container
@@ -25,6 +25,57 @@ html
 						button(type="submit" class="search-button__submit")
 							span Find Course
 		.content
+			.container
+				.content-title-category
+					+b('').title-2 38 courses in Design	
+				.row
+					.col-lg-4
+						.content-left
+							.content-left__top.content-left__top_category
+								.title-selection Location
+								.location-input
+									input(type="text" placeholder="Ex: California" class="location")
+								.title-selection Course category
+								select.select
+									option All category
+								.title-selection Course type
+								.category-checkbox
+									.row.row-margin
+										.col
+											+b('').checkbox
+												+e('input')(type='checkbox' id='checkbox_1').input
+												+e('label')(for='checkbox_1').label All
+										.col
+											+b('').checkbox
+												+e('input')(type='checkbox' id='checkbox_2').input
+												+e('label')(for='checkbox_2').label Full Time
+									.row.row-margin
+										.col
+											+b('').checkbox
+												+e('input')(type='checkbox' id='checkbox_3').input
+												+e('label')(for='checkbox_3').label Online Course
+										.col
+											+b('').checkbox
+												+e('input')(type='checkbox' id='checkbox_4').input
+												+e('label')(for='checkbox_4').label Part Time
+									.row
+										.col
+											+b('').checkbox
+												+e('input')(type='checkbox' id='checkbox_5').input
+												+e('label')(for='checkbox_5').label Live Online Course
+								.title-selection Date
+								.input-date-groups
+									.input-datapicker
+										input(type="text" placeholder="From" class="datepicker")
+										+svg-icon('calendar')
+									.input-datapicker
+										input(type="text" placeholder="To" class="datepicker")
+										+svg-icon('calendar')
+								.categoty-button-groups
+									button.img-top-button.img-top-button_size
+										span.position Apply Filter
+									button.img-top-button.img-top-button_size.img-top-button_color
+										span.position Reset
 		include partials/footer
 		include inc/vendor-scripts
 		script(src="js/client.min.js")

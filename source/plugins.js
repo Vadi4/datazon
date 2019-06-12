@@ -20,11 +20,11 @@ module.exports = {
     // "jquery.maskedinput": [
     //     "dist/jquery.maskedinput.min.js"
     // ],
-    // "jquery-ui": [
-    //     "jquery-ui.js",
-    //     "ui/widget/autocomplete.js",
-    //     "themes/base/jquery-ui.css"
-    // ],
+    "jquery-ui": [
+        "jquery-ui.js",
+        "ui/widget/autocomplete.js",
+        "themes/base/jquery-ui.css"
+    ],
     // "Swiper": [
     //     "dist/css/swiper.css",
     //     "dist/js/swiper.jquery.js"

@@ -20,6 +20,7 @@ $(function() {
 			$('.js-burger-link, .b-header-nav__dropdown-wrap').removeClass('js-act');
 		}
 	});	
+	$(".datepicker").datepicker()
 });
 
 $(window).on('scroll', function() {
