@@ -1,0 +1,30 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title job
+		include inc/head
+	body(class="p-job")
+		include partials/header
+		+b('')(style='background-image: url(../img/pic-coursesCategory.jpg)').top-page._blackout
+			.container
+				.top-title
+					+b('').title-2 Courses in Design
+				.input-grups
+					.search-input1
+						input(type="text" placeholder="Search course title, keywords, etc." class="search search_border")
+						+svg-icon('search')
+					.search-input2
+						input(type="text" placeholder="Search city, province/state, etc." class="search")
+						+svg-icon('pin')
+					.search-button
+						button(type="submit" class="search-button__submit")
+							span Find Course
+		.content
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

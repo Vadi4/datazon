@@ -55,7 +55,21 @@ body
 	background-size cover
 	@media $min_md
 		padding 64px 0
-			
+	&_blackout
+		position relative
+		.container
+			position relative
+			z-index 2
+		&:after
+			content ''
+			position absolute
+			stick()
+			background-color rgba(9, 15, 48, .6)
+
+.top-title
+	text-align center
+	color #fff
+	margin-bottom 64px
 .b-top-img
 	background-position center
 	background-repeat no-repeat
