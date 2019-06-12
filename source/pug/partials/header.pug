@@ -1,0 +1,42 @@
+header.l-header
+	.container
+		.row.align-items-center
+			.col-auto
+				//- img(src="../img/logo.png")
+				+b('a')(href='#').logo
+					+e('img')(src="../img/logo.svg").img
+			.mobile-header-col.col-auto
+				+b('nav').header-nav
+					+e('').item_act
+						a(href="#" class="header-link")
+							+svg-icon('courses')
+							span.-hidden-sm Courses
+					+e('').item
+						a(href="#" class="header-link")
+							+svg-icon('jobs')
+							span.-hidden-sm Jobs
+					+e('').dropdown-wrap
+						+e('').item
+							a(href="#" class="header-link") 
+								+svg-icon('instructors')
+								span Instructors
+						+e('').item
+							a(href="#" class="header-link")
+								+svg-icon('alumni')
+								span Alumni
+						+e('').item
+							a(href="#" class="header-link")
+								+svg-icon('contact')
+								span Contact us
+						+e('').item.-hidden-min-md
+							a(href="#" class="header-link")
+								+svg-icon('company')
+								span For Companies
+				+b('a')(href='#').burger.js-burger-link
+					+svg-icon('menu')
+			.col.-hidden-sm.text-right
+				+b('nav').header-nav
+					+e('').item
+						a(href="#" class="header-link")
+							+svg-icon('company')
+							span For Companies

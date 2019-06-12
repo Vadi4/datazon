@@ -1,0 +1,201 @@
+.l-common-wrap
+	padding-bottom 100px
+
+.l-container
+	max-width 1400px
+	width 100%
+	margin 0 auto
+	position relative
+	height 100%
+.l-header
+	background-color #ffffff
+	box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
+	position relative
+	z-index 10
+	position sticky
+	top 0
+	left 0
+	width 100%
+	padding 20px 0 16px
+	transition .5s padding
+	&.js-fixed
+		padding 14px 0 10px
+		@media $min_md
+			padding 16px 0
+	@media $min_md
+		background-color inherit
+		box-shadow none
+		padding 32px 0
+			
+	.b-logo
+		&__img
+			height 53px
+			width auto
+			@media $min_md
+				height 61px
+				
+.b-logo
+	&_aside
+		display table
+		margin 0 auto 35px auto
+		.b-logo
+			&__img
+				width 180px
+				height auto
+		
+body
+	.container
+		@media $min_lg
+			max-width 1200px
+			
+.b-top-page
+	padding 48px 0
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	@media $min_md
+		padding 64px 0
+			
+.b-top-img
+	background-position center
+	background-repeat no-repeat
+	background-size cover
+	position relative
+	color #fff
+	padding 64px 0
+	min-height 362px
+	overflow hidden
+	// margin-bottom 48px
+	// @media $min_md
+	// 	margin-bottom 64px
+	&:before
+		@media $min_md
+			content ''
+			position absolute
+			z-index 3
+			bottom -1px
+			right -1px
+			height 55px
+			width 100%
+			max-width 1440px
+			background-image url("../img/top-img-figure.png")
+			background-position right bottom
+			background-repeat no-repeat
+			background-size 100% auto
+	.b-tittle-1
+		color #fff
+	&__text-wrap
+		font-size 18px
+		line-height 1.67
+		color #fff
+		font-weight 500
+		p, span, ul, ol
+			color #fff
+	&:after
+		content ''
+		position absolute
+		stick()
+		background-color rgba(9, 15, 48, .7)
+	.container
+		position relative
+		z-index 2
+		
+.content
+	// padding-top 48px
+	// padding-bottom 86px
+	padding-top 48px
+	padding-bottom 86px
+	@media $min_md
+		padding-top 64px
+		padding-bottom 128px		
+
+			
+.b-header-nav
+	display inline-flex
+	align-items center
+	&__item
+		margin-right 32px
+		&:last-child
+			margin-right 0
+		.icon
+			fill #2d2d2d
+			stroke #2d2d2d
+		&_act
+			.header-link
+				color #f77931
+			.icon
+				fill #f77931
+				stroke #f77931
+	&__dropdown-wrap
+		opacity 0
+		visibility hidden
+		position absolute
+		top 52px
+		right 0
+		background-color #fff
+		padding 32px 24px
+		z-index 9
+		transition .5s opacity, .5s visibility
+		box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12), inset 0 30px 30px -10px rgba(70, 70, 70, 0.12) 
+		&.js-act
+			opacity 1
+			visibility visible
+		@media $min_md
+			box-shadow none
+			position static
+			background-color inherit
+			opacity 1
+			visibility visible
+			padding 0
+			display flex
+			align-items center
+		.b-header-nav
+			&__item
+				@media(max-width: 992px)
+					display block
+					margin 0
+					margin-bottom 24px
+					&:last-child
+						margin-bottom 0
+	
+.b-burger
+	@media $min_md
+		display none
+
+.header-link
+	text-decoration none
+	color #000
+	font-family DINPro
+	font-size 18px
+	font-weight 700
+	position relative
+	padding 10px 0px 10px 25px
+.block-height
+	min-height 100%
+.block-aligment
+	justify-content flex-end
+.icon-jobs
+.icon-instructors
+.icon-alumni
+.icon-contact
+.icon-company
+.icon-courses
+	position absolute
+	left 0%
+	top 50%
+	transform translate(0%,-50%)
+.mobile-header-row
+	justify-content flex-end
+	@media $min_640
+		justify-content normal
+		
+.mobile-header-col
+	display flex
+	align-items center
+	justify-content space-between
+	&.col-auto
+		flex-grow 1
+		@media $min_md
+			flex-grow initial
+
+	

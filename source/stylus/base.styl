@@ -1,0 +1,276 @@
+html
+	height 100%
+	font-size $rootFontSize, false
+	user-select auto
+
+body
+	font-family sans-serif
+	min-height 100%
+	position relative
+	-webkit-text-size-adjust 100%
+	-webkit-font-size-adjust 100%
+	font-family Montserrat
+	font-size 14px
+	background-color #fbfbfb
+	color #2d2d2d
+
+img
+	display block
+
+h1, h2, h3, h4, h5, .b-title-1, .b-title-2, .b-title-3, .b-title-4, .b-title-5
+	display block
+	line-height 1.2
+	font-weight 700
+	font-family DINPro
+
+h1, .b-title-1
+	font-size 48px
+	@media $min_md
+		font-size 64px
+h2, .b-title-2
+	font-size 44px
+h3, .b-title-3
+	font-size 24px
+h4, .b-title-4
+	font-size 18px
+h5, .b-title-5
+	font-size 17px
+
+.text-right
+	text-align right
+	
+.text-md-right
+	@media $min_sm
+		text-align right
+	
+.mt-custom-md
+	margin-top 32px
+	
+.mb-custom
+	margin-bottom 32px
+
+p
+	font-size 14px
+	font-weight 400
+	line-height 30px
+	margin-bottom 10px
+	color #2d2d2d
+	&:last-child
+		margin-bottom 0
+
+ul, ol
+	margin-bottom 20px
+	list-style-position inside
+	li
+		margin-bottom 10px
+
+table
+	width 100%
+	border 1px solid #d3d3d3
+	border-collapse separate
+	overflow hidden
+	margin 27px 0
+	th, td
+		padding 14px 20px
+		border-bottom 1px solid #d3d3d3
+		border-right 1px solid #d3d3d3
+		line-height 20px
+		font-size 14px
+		vertical-align top
+		&:last-child
+			border-right 0
+	th
+		font-weight 500
+		font-size 16px
+		background-color #ebebeb
+		text-align left
+		&.small
+			width 580px
+	tr
+		&:last-child
+			td, td
+				border-bottom 0
+
+i
+	font-style italic
+
+b, strong
+	font-weight 600
+
+button
+	border 0
+
+a
+	cursor pointer
+
+hr
+	height 1px
+	opacity 0.2
+	width 100%
+	background-color #fff
+	margin-bottom 23px
+
+._no-border, ._no-border *
+	border 0
+
+._img-left,
+._img-right
+	margin-bottom 14px
+
+._img-left
+	float left
+	margin-right 14px
+
+._img-right
+	float right
+	margin-left 14px
+
+.-text-center
+	text-align center
+	
+.-text-right
+	text-align right
+
+.-text
+	> p
+		&:last-child
+			margin-bottom 0
+
+.fancybox-skin
+	box-shadow none !important
+	border-radius 0
+
+.fancybox-wrap
+	opacity 0
+.compensate-for-scrollbar
+	padding-right 17px
+
+.owl-carousel .owl-item
+	-webkit-transform translateZ(0)
+
+.swiper-container
+	.swiper-prev, .swiper-next
+		vAlign()
+	.swiper-prev
+		left 0
+	.swiper-next
+		right 0
+		
+.b-checkbox, .b-radiobox
+	&__input
+		position absolute
+		width 1px
+		height 1px
+		overflow hidden
+		clip rect(0 0 0 0)
+		&:checked
+			+
+				.b-checkbox, .b-radiobox
+					&__label
+						&:after
+							opacity 1
+						&:before
+							background-color #4286f4
+							border-color #4286f4
+	&__label
+		display block
+		position relative
+		padding-left 22px
+		cursor pointer
+		&:before, &:after
+			position absolute
+			
+.b-checkbox
+	&__label
+		&:before
+			content ''
+			width 15px
+			height 15px
+			border #adb5bd solid 1px
+			border-radius 2px
+			transition .25s background-color, .25s color
+		&:after
+			content '\2714'
+			height 15px
+			width 15px
+			line-height 15px
+			text-align center
+			opacity 0
+			color #fff
+			transition .25s opacity
+		&:before, &:after
+			left 0
+			vAlign()
+			
+.b-radiobox
+	&__label
+		&:before
+			content ''
+			width 15px
+			height 15px
+			border #adb5bd solid 1px
+			border-radius 50%
+			transition .25s background-color, .25s color
+		&:after
+			content ''
+			height 5px
+			width 5px
+			border-radius 50%
+			text-align center
+			opacity 0
+			background-color #fff
+			transition .25s opacity
+		&:before
+			left 0
+			vAlign()
+		&:after
+			top 6px
+			left 5px
+
+.-hidden-lg
+	@media $max_lg
+		display none
+.-hidden-md
+	@media $max_md
+		display none
+.-hidden-sm
+	@media $max_sm
+		display none
+.-hidden-xs
+	@media $max_xs
+		display none
+.-hidden-640
+	@media(max-width 640px)
+		display none
+		
+.-hidden-min-md
+	@media $min_md
+		display none
+
+.-visible-lg
+	display none
+	@media $max_lg
+		display block
+.-visible-md
+	@media $max_md
+		display block
+	@media $min_lg
+		display none
+.-visible-sm
+	@media $max_sm
+		display block
+	@media $min_md
+		display none
+.-visible-xs
+	@media $max_xs
+		display block
+	@media $max_sm
+		display none
+.-visible-640
+	@media(max-width 640px)
+		display block
+	@media(min-width 640px)
+		display none
+
+.im-popup
+	opacity 0

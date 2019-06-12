@@ -1,0 +1,435 @@
+.l-footer
+	width 100%
+	bottom 0
+	left 0
+	height auto
+	background-color #2d2d2d
+	padding 48px 0 86px 0
+	@media $min_md
+		padding 64px 0 128px 0
+	hr
+		@media $min_640
+			max-width 410px
+.send-email
+	margin-bottom 23px
+	position relative
+	padding-right 10px
+	&__input
+		// font-size 18px
+		font-size 16px
+		height 50px
+		font-weight 400
+		border 1px
+		border-radius 3px 0 0 3px
+		width 100%
+		background-color #fff
+		padding 14px 0 14px 18px
+		position relative
+		clip-path polygon(0 100%, 0 0, 100% 0, 90% 100%)
+		placeholder(rgba(45, 45, 45, .5))
+		color rgba(45, 45, 45, 1)
+	&__submit
+		transform skew(-30deg,0)
+		background linear-gradient(215deg, #f99323 0% ,#f55047 100%)
+		border 0px
+		// border-radius 0 10px 0 0
+		border-radius 0 4px 4px 0
+		width 70px
+		height 50px
+		position absolute
+		// box-shadow 2px 5px 25px 0
+		top 0%
+		right 0%
+		box-shadow 2px 5px 25px 0 rgba(244, 112, 72, 0.5)
+		span 
+			position absolute
+			left 35%
+			top 30%
+			font-weight 700
+			font-size 16px
+			color #303847
+			font-family DINPro
+			transform skew(30deg)
+.footer-input-email
+	position relative
+	@media $min_640
+		max-width 410px
+.footer-link
+	text-decoration none
+	color #ffffff
+	font-weight 400
+	display block
+	margin-bottom 19px
+	letter-spacing 1px
+	@media $working_hover
+		transition .5s opacity
+		&:hover
+			opacity .5
+.middle-menu-footer
+	display flex
+	height 100%
+	justify-content center
+	@media $min_640
+		justify-content initial
+	@media $min_md
+		justify-content center
+		padding-top 40px
+	&__left
+		margin-right 56px
+.h3-footer
+	margin-bottom 18px
+	color #fff
+	text-align center
+	@media $min_640
+		text-align left
+.footer-right
+	@media $min_md
+		padding-top 20px
+.img-top
+	width 100%
+	height auto
+	position relative
+	&__text
+		z-index 3
+		position absolute
+		margin-top 64px
+.blackout-img
+	z-index 2
+	opacity 0.7
+	background-color #090f30
+	position absolute
+	width 100%
+	height 84.6666%
+.blackout-img-small
+	z-index 2
+	opacity 0.7
+	background-color #090f30
+	position absolute
+	bottom 0
+	left 0
+	width 51%
+	height 15.3333%
+	clip-path: polygon(0 100%,0 0,100% 0,96% 100%);
+.pic-img
+	z-index 1
+	position relative
+	width 100%
+	height auto
+.img-top-h3
+	color #f87b30
+.img-top-h1
+	color #fff
+	margin-bottom 4px
+.text
+	color #fff
+	font-size 18px
+	margin-bottom 32px
+	font-weight 500
+	line-height 30px
+	max-width 606px
+.img-top-button
+	height 62px
+	transform skew(-30deg)
+	border-radius 8px
+	position relative
+	background linear-gradient(235deg, #fcad16, #f33d51)
+	text-decoration none
+	padding 0 30px
+	span
+		color #ffffff
+		font-family DINPro
+		font-weight 700
+		font-size 24px
+		transform skew(30deg)
+		display block
+	&_size
+		display inline-block
+		line-height 32px
+		height 35px
+		box-shadow 2px 5px 25px 0 rgba(244, 112, 72, 0.5)
+		span
+			font-size 14px
+			font-family DINPro
+			font-weight 700
+			left 18%
+	&_position
+		span
+			left 31%
+	&_jobs
+		display inline-block
+		vertical-align middle
+		margin-right 32px
+.content-text
+	margin-bottom 35px
+.content-title
+	margin-bottom 35px
+	span
+		font-size 18px
+		font-weight 600
+.title-indent
+	margin-bottom 12px
+.mobile-footer-row
+	justify-content center
+	@media $min_640
+		justify-content normal
+.footer-logo
+	margin 0 auto
+	@media $min_640
+		margin 0
+.instructor-card
+	// padding 24px 100px 32px 23px
+	padding 24px 42px 32px 24px
+	background-color #fff
+	border-radius 5px
+	box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
+	position relative
+	margin-bottom 26px
+	@media $min_md
+		margin-bottom 32px
+		
+.instructors-row
+	margin-bottom -24px
+	@media $min_md
+		margin-bottom -32px
+
+.instructor-img
+	border-radius 50%
+	max-width 100%
+	height auto
+	// width 100%
+	// height auto
+	margin-bottom 24px
+	position relative
+	z-index 1
+	
+.instructor-name
+.instructor-surname
+	text-transform uppercase
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+.instructor-full-name
+	margin-bottom 16px
+.short-description
+	font-weight 400
+	letter-spacing -0.6px
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	padding 2px 0
+.rotate-text 
+	transform rotate(-90deg)
+	text-transform uppercase
+	font-family DINPro
+	font-weight 700	
+	position absolute
+	top 30%
+	color #f2f3f8
+	// right -22%
+	right -50px
+	font-size 26px
+	@media $min_lg
+		font-size 32px
+.input-grups
+	display flex
+	width 100%
+.search-input1
+.search-input2
+	position relative
+	width 480px
+.search
+	font-size 18px
+	font-weight 400
+	width 100%
+	background-color #fff
+	padding 16px 0 16px 64px
+	border 1px solid #d8d8d8
+	placeholder(rgba(45, 45, 45, .2))
+	font-weight 400
+.search_border
+	border-radius 3px 0 0 3px 
+.icon-search
+.icon-pin
+	position absolute
+	// top 25%
+	// left 5%
+	top 50%
+	left 16px
+	transform translateY(-50%)
+.search-button
+	height 56px
+	// width 186.9px
+	flex-grow 1
+	flex-shrink 0
+	&__submit
+		height 56px
+		// width 186.9px
+		width 100%
+		display block
+		padding 0 30px
+		position relative
+		border-radius 0 3px 3px 0
+		background linear-gradient(235deg, #fcad16, #f33d51)
+		clip-path polygon(0 100%, 0 0, 100% 0, 90% 100%)
+		white-space nowrap
+		span
+			// position absolute
+			// left 10%
+			// top 20%
+			color #ffffff
+			font-family DINPro
+			font-weight 700
+			font-size 24px
+.content-left
+	&__bottom
+	&__top
+		background-color #fff
+		border-radius 6px
+		padding 48px 24px
+		box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
+	&__top
+		margin-bottom 24px
+.content-right
+	background-color #fff
+	border-radius 6px
+	padding 48px 32px
+	box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
+.logo-img
+	margin 0 auto
+	max-width 100%
+	height auto
+.description-text
+	font-weight 400
+	line-height 22px
+	margin-bottom 64px
+.short-profile
+	display table
+	margin-bottom 48px
+	&__text
+		display table-cell
+		vertical-align middle
+	&__img
+		display table-cell
+		padding-right 16px
+		vertical-align middle
+
+.profile-text-row
+	margin-bottom 8px
+	&:last-child
+		margin-bottom 0		
+
+.short-profile-name
+	color #0d51a2
+	font-size 18px
+	font-weight 700
+	text-decoration none
+.short-profile-position
+	font-weight 400
+	line-height 1.5
+.short-profile-company
+	font-weight 700
+.short-title-jobs
+	font-size 18px
+	font-weight 700
+	margin-bottom 32px
+	
+.short-job-wrap
+	text-decoration none
+	display block
+	color #2d2d2d
+
+.short-jobs
+	line-height 1.4
+	padding-bottom 16px
+	border-bottom 1px solid rgba(45, 45, 45, .1)
+	margin-bottom 16px
+	&__position
+		font-weight 400
+		margin-bottom 4px
+	&__salary
+		font-weight 400
+		margin-bottom 4px
+		color #f87b30
+	&__porter-group
+		color #0d51a2
+	&:last-child
+		margin-bottom 32px
+.profile-img
+	border-radius 50%
+.button-more
+	width 100%
+	text-align center
+.title-jobs
+	display table
+	width 100%
+	margin-bottom 33px
+	&__left
+		display table-cell
+	&__right
+		display table-cell
+		text-align right
+.jobs-name-company
+	color #0d51a2
+	font-size 18px
+	font-weight 700
+	letter-spacing -0.8px
+.title-jobs-h2
+	margin-bottom 22px
+.title-jobs-salary
+	color #f87b30
+	letter-spacing -1px
+	margin-bottom 16px
+.title-jobs-contract
+	font-size 18px
+	font-weight 400
+	margin-bottom 8px
+.title-jobs-days
+	font-size 18px
+	font-weight 400
+	opacity 0.4
+.jobs-description
+	margin-bottom 32px
+	&__title
+		font-weight 700
+		line-height 30px
+	&__text
+		margin-bottom 35px
+		&:last-child
+			margin-bottom 0
+.p-size
+	font-size 18px
+.buttom-share
+	text-decoration none
+	display inline-block
+	vertical-align middle
+	&__img
+		display inline-block
+		vertical-align middle
+		position relative
+		top 3px
+	span
+		vertical-align middle
+		display inline-block
+		font-size 24px
+		font-family DINPro
+		font-weight 700
+		color #2d2d2d
+.jobs-buttom-groups
+	width 100%
+	text-align center
+	
+.b-burger
+	.icon
+		fill #2d2d2d
+		transition .5s color
+	&.js-act
+		.icon
+			fill #f77931
+			
+.button-min-w
+	width 100%
+	max-width 220px
+	margin-left 20px
+	@media $min_md
+		max-width 262px
+	

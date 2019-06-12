@@ -1,0 +1,125 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title job
+		include inc/head
+	body(class="p-job")
+		include partials/header
+		+b('')(style='background-image: url(../img/img-top-page.jpg)').top-page
+			.container
+				.input-grups
+					.search-input1
+						input(type="text" placeholder="Search course title, keywords, etc." class="search search_border")
+						+svg-icon('search')
+					.search-input2
+						input(type="text" placeholder="Search city, province/state, etc." class="search")
+						+svg-icon('pin')
+					.search-button
+						button(type="submit" class="search-button__submit")
+							span Find Course
+			
+		.content
+			.container
+				.row
+					.col-lg-4
+						.content-left
+							.content-left__top
+								+b('span').logo_aside
+									+e('img')(src='../img/logo.svg').img
+								.description-text Startup accelerators launch companies. We launch careers. It starts by surrounding you with a cohort of highly motivated, entrepreneurial learners and a team of tech industry leaders.
+								.short-profile
+									.short-profile__img
+										a(href="#")
+											img(src="https://via.placeholder.com/80" class="profile-img")
+									.short-profile__text
+										div.profile-text-row
+											a(href='#').short-profile-name Randy McCoy
+										div.profile-text-row
+											span.short-profile-position Senior Resourse Manager
+										div.profile-text-row
+											span.short-profile-company DataZon
+								.short-title-jobs Active Jobs
+								- for(var i = 0; i < 4; i++)
+									.short-jobs
+										a(href='#').short-job-wrap
+											.short-jobs__position UI/UX Designer
+											.short-jobs__salary $ 10,000 - 25,000 / hour
+								.button-more.mt-custom-md
+									a.img-top-button.img-top-button_size(href='#')
+										span 12 More Jobs
+							.content-left__top
+								.short-title-jobs Similar Jobs
+								- for(var i = 0; i < 4; i++)
+									.short-jobs
+										a(href='#').short-job-wrap
+											.short-jobs__position UI/UX Designer
+											.short-jobs__salary $ 10,000 - 25,000 / hour
+											.short-jobs__porter-group Porter Group
+								.button-more.mt-custom-md
+									button.img-top-button.img-top-button_size.img-top-button_position
+										span.position See All
+					.col-lg-8 
+						.content-right
+							.row.mb-custom
+								.col-md-6.mb-4.mb-md-0
+									.title-jobs-h2
+										h2 UX/UI Designer
+									.jobs-name-company DataZon
+								.col-md-6.text-md-right
+									.title-jobs-salary 
+										h3 $ 10,000 - 25,000 / hour
+									.title-jobs-contract Contract to Hire
+									.title-jobs-days 3 days ago
+							.jobs-description
+								.jobs-description__title Description
+								.jobs-description__text
+									p For more than 11 years, Amazon Web Services (AWS) has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 100 fully featured services to millions of active customers around the world—including the fastest-growing startups, largest enterprises, and leading government agencies—to power their infrastructure. Global Business Operations (GBO) is a diverse team that enable AWS to be the world’s most efficient and effective selling organization. We deliver innovative solutions that capture, enrich, and establish an authoritative source for customer information, and provide actionable insights and an improved customer experience through our tools, technology and processes.
+									p The ideal candidate will be comfortable working on multiple projects in a fast-paced, high-energy environment. The candidate should be an adult learning expert who is creative, analytical, and customer-obsessed. They must be willing to roll up their sleeves and do what it takes to get the job done while insisting on the highest standards and measuring the impact of the learning experiences they build.		
+								.jobs-description__title Specific Responsibilities Will Include
+								.jobs-description__text
+									p - Design and develop creative, learner-centered, performance-based training materials utilizing interactive eLearning modules and videos.
+									p - Use appropriate tools and delivery methods to produce blended learning materials.
+									p - Develop scalable modules to ensure all training programs are consistent and ready for a potentially global audience.
+									p - Facilitate scoping meetings with subject-matter-experts and technical project leads; devise and drive training communication updates.
+									p - Continually evaluate solutions for quality, behavioral and business impact, and scalability.
+									p - Pursue a deep understanding of learner roles and work with SMEs to ensure that learning solutions meet learner needs.
+									p - Leverage technology to improve learner access to materials and provide just in time learning.
+									p - Maintain knowledge of new learning approaches, technology, and tools through continuous research to ensure our solutions deliver innovation.
+									p - Develop assessments that measure learner outcomes.
+								.jobs-description__title Basic Qualifications
+								.jobs-description__text
+									p - Bachelor&apos;s degree in a relevant field or equivalent work experience.
+									p - 5+ years experience in instructional design and developing learning content.
+									p - Experience designing, developing, planning, implementing, and assessing training to current industry and adult learning standards.
+									p - Experience developing training collateral, interactive eLearning modules, and job aids.
+									p - Working knowledge of eLearning development tools such as Captivate, Articulate Studio/Storyline, Camtasia, and the Adobe Creative Suite.
+									p - Experience planning for and analyzing data driven learning experiences (e.g. using xAPI).
+									p - An eye for visual design and knack for creating great user experiences.
+									p - Proven experience collaborating with subject matter experts, global stakeholders, and managers.
+									p - Experience managing/updating training content residing on content management systems.
+									p - Experience managing, monitoring, reporting on all curriculum and assessment data.
+								.jobs-description__title Preferred Qualifications
+								.jobs-description__text
+									p - Graduate degree in Instructional Design, Adult Learning, or a related field.
+									p - 2+ years Project Management experience.
+									p - Learning Management System (e.g., Cornerstone or Thinking Cap) administration experience, including eLearning publishing and learning assessments.
+									p - Intermediate/Advanced knowledge of web development (HTML5, CSS, JavaScript).
+									p - Intermediate/Advanced knowledge of media development (image, video, audio).
+									p - History of sparking improvements in learning strategy and content through collaboration and prototyping.
+									p - Ability to prioritize, manage and complete multiple projects with tight deadlines, multiple stakeholders, and minimal oversight.
+									p - Excellent written (writing and editing) and verbal skills.
+									p - Amazon is an Equal Opportunity-Affirmative Action Employer – Minority / Female / Disability / Veteran / Gender Identity / Sexual Orientation.
+							.jobs-buttom-groups
+								button.img-top-button.img-top-button_jobs.button-min-w
+									span Apply
+								a(href="#" class="buttom-share")
+									img(src="../img/share.png" class="buttom-share__img")
+									span Share
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

@@ -1,0 +1,49 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title text
+		include inc/head
+	body(class="p-text")
+		include partials/header
+		+b('')(style='background-image: url(../img/pic-text-p.png)').top-img
+			.container
+				.row
+					.col-lg-7
+						.img-top-h3
+							h3 FULL-TIME COURSE
+						.img-top-h1
+							h1 Web development
+						.text Become a web developer in 12 weeks
+						button.img-top-button.button-min-w
+							span Apply
+		.content
+			.container
+				.row
+					.col
+						.title-indent
+							h2 What You Will Learn
+				.row 
+					.col-9
+						.content-text
+							p.p-size For more than 11 years, Amazon Web Services (AWS) has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 100 fully featured services to millions of active customers around the world—including the fastest-growing startups, largest enterprises, and leading government agencies—to power their infrastructure. Global Business Operations (GBO) is a diverse team that enable AWS to be the world’s most efficient and effective selling organization. We deliver innovative solutions that capture, enrich, and establish an authoritative source for customer information, and provide actionable insights and an improved customer experience through our tools, technology and processes.
+							p.p-size The ideal candidate will be comfortable working on multiple projects in a fast-paced, high-energy environment. The candidate should be an adult learning expert who is creative, analytical, and customer-obsessed. They must be willing to roll up their sleeves and do what it takes to get the job done while insisting on the highest standards and measuring the impact of the learning experiences they build.
+						.content-title
+							span Specific Responsibilities Will Include
+						p.p-size - Design and develop creative, learner-centered, performance-based training materials utilizing interactive eLearning modules and videos.
+						p.p-size - Use appropriate tools and delivery methods to produce blended learning materials.
+						p.p-size - Develop scalable modules to ensure all training programs are consistent and ready for a potentially global audience.
+						p.p-size - Facilitate scoping meetings with subject-matter-experts and technical project leads; devise and drive training communication updates.
+						p.p-size - Continually evaluate solutions for quality, behavioral and business impact, and scalability.
+						p.p-size - Pursue a deep understanding of learner roles and work with SMEs to ensure that learning solutions meet learner needs.
+						p.p-size - Leverage technology to improve learner access to materials and provide just in time learning.
+						p.p-size - Maintain knowledge of new learning approaches, technology, and tools through continuous research to ensure our solutions deliver innovation.
+						p.p-size - Develop assessments that measure learner outcomes.
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

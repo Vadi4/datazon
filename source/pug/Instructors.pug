@@ -1,0 +1,35 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title instructors
+		include inc/head
+	body(class="p-instructors")
+		include partials/header
+		+b('')(style='background-image: url(../img/pic-instructors.png)').top-img
+			.container
+				.row
+					.col-lg-7
+						+b('span').title-1 Meet the DataZon Team
+						+e('').text-wrap
+							p Instructors are industry professionals who’ve worked in the tech community for years. They have the experience and knowledge you can rely on to succeed. 
+		.content
+			.container
+				.row.instructors-row
+					- for(var i = 0; i < 10; i++)
+						.col-sm-6.col-mb-4.col-lg-3
+							.instructor-card
+								img(src="https://via.placeholder.com/140" class="instructor-img")
+								.rotate-text instructor
+								.instructor-full-name
+									+b('span').title-3.nope-instructor-name fernando
+									+b('span').title-3.nope-instructor-surname soler
+								.short-description Ux & Product Design
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

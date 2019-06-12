@@ -1,0 +1,53 @@
+footer.l-footer
+	.container
+		.row
+			.col-lg-4.col-xl-5.mb-3.mb-lg-0
+				.h3-footer
+					h3 Join Our Newsletter
+				.send-email
+					.footer-input-email
+						input(type="email" placeholder="Your email adress").send-email__input
+						button(type="submit" value="").send-email__submit
+							span GO
+				hr
+				.row.mobile-footer-row
+					.col-auto
+						a(href="#" class="footer-link") Home
+					.col-auto
+						a(href="#" class="footer-link") Courses
+					.col-auto
+						a(href="#" class="footer-link") Jobs
+					.col-auto
+						a(href="#" class="footer-link") Team
+					.col-auto
+						a(href="#" class="footer-link") Privacy
+			.col-lg-5.mb-3.mb-lg-0
+				.middle-menu-footer
+					.middle-menu-footer__left
+						a(href="#" class="footer-link") California
+						a(href="#" class="footer-link") Delaware
+						a(href="#" class="footer-link") Florida
+					.middle-menu-footer-right
+						a(href="#" class="footer-link") New Jersey
+						a(href="#" class="footer-link") Texas
+						a(href="#" class="footer-link") Ontario
+			.col-lg-3.col-xl-2
+				.footer-right
+					+b('a')(href='#').logo
+						+e('img')(src="../img/logo-footer.svg").img
+					.row.mobile-footer-row
+						.col-auto
+							a(href="#" class="social-network")
+								+svg-icon('facebook')
+						.col-auto
+							a(href="#" class="social-network")
+								+svg-icon('linkedin')
+						.col-auto
+							a(href="#" class="social-network")
+								+svg-icon('twitter')
+						.col-auto
+							a(href="#" class="social-network")
+								+svg-icon('instagram')
+				
+				
+

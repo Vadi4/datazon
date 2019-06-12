@@ -1,0 +1,16 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title main
+		include inc/head
+	body(class="p-main")
+		include partials/header
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")
