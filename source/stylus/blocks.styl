@@ -128,7 +128,6 @@
 	line-height 30px
 	max-width 606px
 .img-top-button
-	height 62px
 	transform skew(-30deg)
 	border-radius 8px
 	position relative
@@ -145,7 +144,6 @@
 	&_size
 		display inline-block
 		line-height 32px
-		height 35px
 		box-shadow 2px 5px 25px 0 rgba(244, 112, 72, 0.5)
 		span
 			font-size 14px
@@ -279,7 +277,7 @@
 		display block
 		padding 0 30px
 		position relative
-		border-radius 0 3px 3px 0
+		//border-radius 0 3px 3px 0
 		background linear-gradient(235deg, #fcad16, #f33d51)
 		clip-path polygon(0 100%, 0 0, 100% 0, 90% 100%)
 		white-space nowrap	
@@ -453,25 +451,31 @@
 	margin-bottom 24px
 .datepicker
 .select
-.location
+.input
 	border 1px solid rgba(151, 151, 151, 0.1)
 	border-radius 3px
 	placeholder(rgba(45, 45, 45, .4))
-	padding 8px 0px 8px 16px
+	padding 8px 8px 8px 16px
 	background-image linear-gradient(to bottom, #f6f9ff, #fcfdff)
 	width 100%
 .select
 	margin-bottom 24px
+	noSelect()
+	background-image url('../img/drop-down.png'),linear-gradient(to bottom, #f6f9ff, #fcfdff)
+	background-position right 10px center, right 0
+	background-repeat no-repeat
 .row-margin
 	margin-bottom 16px
 .category-checkbox
 	margin-bottom 24px
 .datepicker
 	padding 8px 0 8px 16px
-	max-width 153px
 .input-datapicker
 	position relative
-	display inline-block
+	width 100%
+	margin-right 7px
+	&:last-child
+		margin 0
 	.icon-calendar
 		position absolute
 		top 50%
@@ -479,18 +483,27 @@
 		transform translate(-5%,-50%)
 .input-date-groups
 	margin-bottom 32px
+	display flex
+	width 100%
 .categoty-button-groups
-	text-align center
+	display flex
+	width 100%
+	justify-content center
 .courses-category
 	background-color #fff
 	border-radius 5px
 	box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
 	margin-bottom 32px
-	display flex
+	display block
+	@media $min_sm
+		display flex
 	&:last-child
 		margin 0
 	&__left
 		position relative
+		background url(../img/pic-content-category.png)
+		background-size 100% auto
+		height 301px
 		&:after
 			content ''
 			position absolute
@@ -542,8 +555,14 @@
 		color #fff
 		font-size 24px
 		font-weight 700
-.short-description
-	max-width 360px
+.short-category-description
+	height 90px
 	font-size 18px
+	line-height 30px
 	overflow hidden
+	display -webkit-box
 	-webkit-line-clamp 3
+.category-img
+	display none
+	@media $min_sm
+		display block
