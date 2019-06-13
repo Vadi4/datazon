@@ -481,3 +481,69 @@
 	margin-bottom 32px
 .categoty-button-groups
 	text-align center
+.courses-category
+	background-color #fff
+	border-radius 5px
+	box-shadow 5px 10px 30px 0 rgba(70, 70, 70, 0.12)
+	margin-bottom 32px
+	display flex
+	&:last-child
+		margin 0
+	&__left
+		position relative
+		&:after
+			content ''
+			position absolute
+			stick()
+			background-color rgba(9, 15, 48, .6)
+		&:before
+			content ''
+			position absolute
+			z-index 3
+			top 0
+			right 0
+			height 100%
+			width 78px
+			background-image url("../img/category-figure.png")
+			background-position right bottom
+			background-repeat no-repeat
+			background-size 100% auto
+	&__right
+		padding 32px 68px 32px 32px
+.courses-category-title
+	margin-bottom 8px
+.courses-category-time
+	font-family DINPro
+	font-size 24px
+	font-weight 700
+	color #f87b30
+	text-transform uppercase
+	margin-bottom 15px
+.courses-category-location
+	font-size 18px
+	font-weight 700 
+	padding-left 30px
+	position relative
+	margin-bottom 16px
+	.icon-location
+		position absolute
+		top 0
+		left 0
+.courses-category-date
+	z-index 4
+	position absolute
+	top 10%
+	left 10%
+	&__top
+		margin-bottom 155px
+		.b-title-2
+			color #fff
+	&__bottom
+		color #fff
+		font-size 24px
+		font-weight 700
+.short-description
+	max-width 360px
+	font-size 18px
+	overflow hidden
+	-webkit-line-clamp 3

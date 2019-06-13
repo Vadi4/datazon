@@ -76,6 +76,24 @@ html
 										span.position Apply Filter
 									button.img-top-button.img-top-button_size.img-top-button_color
 										span.position Reset
+					.col-lg-8
+						.content-right-category
+							- for(var i = 0; i < 5; i++)
+								.courses-category
+									.courses-category__left
+										img(src="../img/pic-content-category.png" class="category-img")
+										.courses-category-date
+											.courses-category-date__top
+												+b('').title-2 May 29
+											.courses-category-date__bottom 12 weeks
+									.courses-category__right
+										.courses-category-title
+											+b('').title-2 Visual Design
+										.courses-category-time full-time course
+										.courses-category-location California
+											+svg-icon('location')
+										.short-description Want to become a professional viusal designer? This is how it's done. In this intensive, fully immersive 12-week
+
 		include partials/footer
 		include inc/vendor-scripts
 		script(src="js/client.min.js")
