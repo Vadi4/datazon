@@ -566,3 +566,33 @@
 	display none
 	@media $min_sm
 		display block
+.row-wrap
+	margin-bottom 32px
+.b-col-3-link
+.b-col-6-link
+	display block
+	width 100%
+	position relative
+	text-decoration none
+	color #fff
+	&__img
+		width 100%
+	&:after
+		content ''
+		position absolute
+		stick()
+		background-color rgba(9, 15, 48, .6)
+	&__text
+		position absolute
+		top 10% 
+		left 5%
+		z-index 3
+		.b-title-2
+			margin-bottom 16px
+			text-transform uppercase
+		.b-title-3
+			margin-bottom 10px
+			text-transform uppercase
+.b-quantity-courses
+	font-size 18px
+	font-weight 700px

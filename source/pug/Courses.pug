@@ -1,0 +1,76 @@
+include ../../node_modules/bemto.pug/bemto
+include helpers/variables
+include helpers/mixins
+
+
+doctype html
+html
+	head
+		title Courses
+		include inc/head
+	body(class="p-Courses")
+		include partials/header
+		+b('')(style='background-image: url(../img/pic-courses.jpg)').top-page._blackout
+			.container
+				.top-title
+					+b('').title-2 Courses Designed to Accelerate Your Career
+				.input-grups
+					.search-input1
+						input(type="text" placeholder="Search course title, keywords, etc." class="search search_border")
+						+svg-icon('search')
+					.search-input2
+						input(type="text" placeholder="Search city, province/state, etc." class="search")
+						+svg-icon('pin')
+					.search-button
+						button(type="submit" class="search-button__submit")
+							span Find Course
+		.content
+			.container
+				- for(var i=0; i<2; i++)
+					.row.row-wrap
+						.col-lg-6
+							+b('').col-6
+								+b('a')(href="#").col-6-link
+									+e('img')(src="https://via.placeholder.com/555x240").img
+									+e('').text
+										+b('').title-2 Development
+										+b('').quantity-courses 32 courses
+						.col-lg-3
+							+b('').col-3
+								+b('a')(href="#").col-3-link
+									+e('img')(src="https://via.placeholder.com/263x240").img
+									+e('').text
+										+b('').title-3 game development
+										+b('').quantity-courses 32 courses
+						.col-lg-3
+							+b('').col-3
+								+b('a')(href="#").col-3-link
+									+e('img')(src="https://via.placeholder.com/263x240").img
+									+e('').text
+										+b('').title-3 game development
+										+b('').quantity-courses 32 courses
+					.row.row-wrap
+						.col-lg-3
+							+b('').col-3
+								+b('a')(href="#").col-3-link
+									+e('img')(src="https://via.placeholder.com/263x240").img
+									+e('').text
+										+b('').title-3 game development
+										+b('').quantity-courses 32 courses
+						.col-lg-3
+							+b('').col-3
+								+b('a')(href="#").col-3-link
+									+e('img')(src="https://via.placeholder.com/263x240").img
+									+e('').text
+										+b('').title-3 game development
+										+b('').quantity-courses 32 courses
+						.col-lg-6
+							+b('').col-6
+								+b('a')(href="#").col-6-link
+									+e('img')(src="https://via.placeholder.com/555x240").img
+									+e('').text
+										+b('').title-2 Development
+										+b('').quantity-courses 32 courses
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")
