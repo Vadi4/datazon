@@ -26,51 +26,94 @@ html
 							span Find Course
 		.content
 			.container
-				- for(var i=0; i<2; i++)
-					.row.row-wrap
-						.col-lg-6
-							+b('').col-6
-								+b('a')(href="#").col-6-link
-									+e('img')(src="https://via.placeholder.com/555x240").img
-									+e('').text
-										+b('').title-2 Development
-										+b('').quantity-courses 32 courses
-						.col-lg-3
-							+b('').col-3
-								+b('a')(href="#").col-3-link
-									+e('img')(src="https://via.placeholder.com/263x240").img
-									+e('').text
-										+b('').title-3 game development
-										+b('').quantity-courses 32 courses
-						.col-lg-3
-							+b('').col-3
-								+b('a')(href="#").col-3-link
-									+e('img')(src="https://via.placeholder.com/263x240").img
-									+e('').text
-										+b('').title-3 game development
-										+b('').quantity-courses 32 courses
-					.row.row-wrap
-						.col-lg-3
-							+b('').col-3
-								+b('a')(href="#").col-3-link
-									+e('img')(src="https://via.placeholder.com/263x240").img
-									+e('').text
-										+b('').title-3 game development
-										+b('').quantity-courses 32 courses
-						.col-lg-3
-							+b('').col-3
-								+b('a')(href="#").col-3-link
-									+e('img')(src="https://via.placeholder.com/263x240").img
-									+e('').text
-										+b('').title-3 game development
-										+b('').quantity-courses 32 courses
-						.col-lg-6
-							+b('').col-6
-								+b('a')(href="#").col-6-link
-									+e('img')(src="https://via.placeholder.com/555x240").img
-									+e('').text
-										+b('').title-2 Development
-										+b('').quantity-courses 32 courses
+				.courses
+					- for(var i=0; i<2; i++)
+						.row.row-wrap
+							.col-lg-6
+								+b('').col-6
+									+b('a')(href="#").col-6-link
+										+e('img')(src="https://via.placeholder.com/555x240").img
+										+e('').text
+											+b('').title-2 Development
+											+b('').quantity-courses 32 courses
+							.col-lg-3
+								+b('').col-3
+									+b('a')(href="#").col-3-link
+										+e('img')(src="https://via.placeholder.com/263x240").img
+										+e('').text
+											+b('').title-3 game development
+											+b('').quantity-courses 32 courses
+							.col-lg-3
+								+b('').col-3
+									+b('a')(href="#").col-3-link
+										+e('img')(src="https://via.placeholder.com/263x240").img
+										+e('').text
+											+b('').title-3 game development
+											+b('').quantity-courses 32 courses
+						.row.row-wrap
+							.col-lg-3
+								+b('').col-3
+									+b('a')(href="#").col-3-link
+										+e('img')(src="https://via.placeholder.com/263x240").img
+										+e('').text
+											+b('').title-3 game development
+											+b('').quantity-courses 32 courses
+							.col-lg-3
+								+b('').col-3
+									+b('a')(href="#").col-3-link
+										+e('img')(src="https://via.placeholder.com/263x240").img
+										+e('').text
+											+b('').title-3 game development
+											+b('').quantity-courses 32 courses
+							.col-lg-6
+								+b('').col-6
+									+b('a')(href="#").col-6-link
+										+e('img')(src="https://via.placeholder.com/555x240").img
+										+e('').text
+											+b('').title-2 Development
+											+b('').quantity-courses 32 courses
+				.top-courses
+					+b('').title-2 Browse Our Top Courses
+					+b('ul').menu
+						+b('li').menu-item
+							+e('a')(href="#").link._active Developer
+						+b('li').menu-item
+							+e('a')(href="#").link Business
+						+b('li').menu-item
+							+e('a')(href="#").link Design
+						+b('li').menu-item
+							+e('a')(href="#").link Web
+						+b('li').menu-item
+							+e('a')(href="#").link Photography
+						+b('li').menu-item
+							+e('a')(href="#").link Marketing
+					.top-courses-category
+						.row
+							- for(var i =0; i<6; i++)
+								.col-lg-4.row-wrap
+									+b('').top-courses-category
+										+e('').left
+											+b('img')(src="../img/pic-top-courses.png").img
+										+e('').right
+											+b('').title-3 product management
+											+b('').courses-category-text New York, Full-time
+											+b('').courses-category-time 12 weeks course
+					.jobs-buttom-groups
+						button.img-top-button.img-top-button_jobs.button-min-w
+							span All Courses
+				.reviews
+					-for(var i=0; i<2; i++)
+						+b('').reviews-item
+							+b('').top-reviews-item
+								+e('').left
+									+b('img')(src="https://via.placeholder.com/100").reviews-img
+								+e('').right
+									+b('').title-3 lina quinn
+									+b('').reviews-job
+										p Former Trading Analyst,
+										p Now Full-Stack Developer At Loopio	
+							+b('').bottom-reviews-item
+								p  The course teaches you thepopular languages and frameworks with the emphasis on the skills and tools you need to learn new things on your own, reflective of real-life scenarios	
 		include partials/footer
 		include inc/vendor-scripts
 		script(src="js/client.min.js")

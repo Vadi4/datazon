@@ -157,6 +157,7 @@
 		display inline-block
 		vertical-align middle
 		margin-right 32px
+		height 62px
 	&_color
 		background #fff
 		border 1px solid #f77931
@@ -503,7 +504,6 @@
 		position relative
 		background url(../img/pic-content-category.png)
 		background-size 100% auto
-		height 301px
 		&:after
 			content ''
 			position absolute
@@ -568,6 +568,8 @@
 		display block
 .row-wrap
 	margin-bottom 32px
+	&:last-child
+		margin-bottom 0
 .b-col-3-link
 .b-col-6-link
 	display block
@@ -596,3 +598,103 @@
 .b-quantity-courses
 	font-size 18px
 	font-weight 700px
+.courses
+	margin-bottom 128px
+.top-courses
+	margin-bottom 128px
+	.b-title-2
+		text-align center
+		margin-bottom 48px
+	&__menu
+		margin-bottom 64p
+	.b-menu
+		list-style none
+		text-align center
+		margin-bottom 64px
+		.b-menu-item
+			display inline-block
+			margin-right 77px
+			&:last-child
+				margin-right 0
+			&__link
+				text-decoration none
+				font-size 24px
+				font-family DINPro
+				font-weight 700
+				color #2d2d2d
+				&_active
+					color #f77931
+					text-decoration underline
+.b-top-courses-category
+	clearfix()
+	background-color #fff
+	border-radius 5px
+	box-shadow 5px 10px 30px 0 rgba(70,70,70,0.12)
+	&__left
+		position relative
+		float left
+		&:before
+			content ''
+			position absolute
+			z-index 3
+			top 0
+			right 0
+			height 100%
+			width 36px
+			background-image url("../img/category-figure.png")
+			background-position right bottom
+			background-repeat no-repeat
+			background-size 100% auto
+	&__right
+		overflow hidden
+		padding 19px 40px 18px 16px
+		.b-title-3
+			text-transform uppercase
+			margin-bottom 4px
+.b-courses-category-text
+	opacity 0.4
+	margin-bottom 10px
+.top-courses-category
+	margin-bottom 32px
+.reviews
+	display block
+	width 100%
+	@media $min_sm
+		display flex
+.b-reviews-item
+	width 100%
+	padding 32px
+	background-color #ffffff
+	border-radius 5px
+	box-shadow 5px 10px 30px 0 rgba(70,70,70,0.12)
+	margin-right 30px
+	margin-bottom 30px
+	@media $min_sm
+		margin-bottom 0
+	&:last-child
+		margin 0
+.b-reviews-img
+	border-radius 50%
+.b-top-reviews-item
+	margin-bottom 20px
+	&__left
+		margin-right 24px
+		display inline-block
+		vertical-align middle
+	&__right
+		display inline-block
+		vertical-align middle
+		.b-title-3
+			text-transform uppercase
+			margin-bottom 16px
+.b-reviews-job
+	p
+		line-height 10px
+		opacity 0.5
+.b-bottom-reviews-item
+	p
+		font-size 18px
+		&:after
+			content '“'
+		&:before
+			content '”'
